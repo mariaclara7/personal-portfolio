@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     return (
-        <section id="home" className="h-[100vh] flex flex-col items-center justify-center">
+        <section id="home" className="h-[95vh] flex flex-col items-center justify-center mb-10">
             <h1 className="font-bold text-[35px] text-pink-500 mb-2">Maria Clara</h1>
             <ReactTyped
                 strings={[
@@ -22,7 +22,7 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/mariaclara733/" target="_blank" className="hover:text-blue-800 duration-500"><FaLinkedin /></a>
             </div>
 
-            <button className="bg-pink-400 text-white font-bold rounded-full py-2 px-5 hover:bg-pink-600 duration-500">Curriculum Vitae</button>
+            <button className="bg-pink-400 text-white font-bold rounded-full py-2 px-5 hover:bg-pink-600 hover:scale-110 duration-500">Curriculum Vitae</button>
 
             <a href="#about" className="absolute bottom-5">
                 <div>
