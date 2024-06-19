@@ -27,9 +27,9 @@ export default function Home() {
             <a href="#about" className="absolute bottom-5">
                 <div>
                     <p className="mb-3 text-pink-500 font-semibold">Ver mais</p>
-                    <div class="scroll-downs">
-                        <div class="mousey">
-                            <div class="scroller"></div>
+                    <div className="scroll-downs">
+                        <div className="mousey">
+                            <div className="scroller"></div>
                         </div>
                     </div>
                 </div>
