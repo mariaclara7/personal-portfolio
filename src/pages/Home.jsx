@@ -22,7 +22,9 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/mariaclara733/" target="_blank" className="hover:text-blue-800 duration-500"><FaLinkedin /></a>
             </div>
 
-            <button className="bg-pink-400 text-white font-bold rounded-full py-2 px-5 hover:bg-pink-600 hover:scale-110 duration-500">Curriculum Vitae</button>
+            <button className="bg-pink-400 text-white font-bold rounded-full py-2 px-5 hover:bg-pink-600 hover:scale-110 duration-500"><a href="/personal-portfolio/curriculum.pdf" target="_blank" rel="noopener noreferrer" className="text-white">
+                Curriculum Vitae
+            </a></button>
 
             <a href="#about" className="absolute bottom-5">
                 <div>
