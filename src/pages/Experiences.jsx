@@ -4,8 +4,8 @@ export default function Experiences() {
     return (
         <section id="experiences" className="lg:px-10 px-2 py-10">
             <h2 className="font-bold text-[35px] text-pink-500 mb-10">Experiências</h2>
-            <div className="flex gap-10">
-                <div className='bg-white shadow-lg lg:px-10 px-5 py-5 rounded-lg w-[50%] flex-col flex items-baseline'>
+            <div className="flex gap-10 items-baseline">
+                <div className='bg-white shadow-lg lg:px-10 px-5 py-5 rounded-lg w-[50%] flex-col flex'>
                     <div className="flex gap-5">
                         <div className="flex flex-col items-center">
                             <PiBriefcaseDuotone className="text-[40px] text-purple-500" />
