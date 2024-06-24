@@ -18,7 +18,7 @@ export default function Home() {
             </ReactTyped>
             <div className="flex text-[30px] gap-5 text-pink-400 my-5">
                 <a href="mailto:mcadelmonico@gmail.com" target="_blank" className="hover:text-pink-600 duration-500"><FaEnvelope /></a>
-                <a href="https://github.com/MariaClara7" target="_blank" className="hover:text-black duration-500"><FaGithub /></a>
+                <a href="https://github.com/mariaclara7" target="_blank" className="hover:text-black duration-500"><FaGithub /></a>
                 <a href="https://www.linkedin.com/in/mariaclara733/" target="_blank" className="hover:text-blue-800 duration-500"><FaLinkedin /></a>
             </div>
 

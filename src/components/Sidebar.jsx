@@ -27,9 +27,9 @@ export default function Sidebar() {
                             </a>
                         </li>
                         <li>
-                            <a href="#experiene" className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
+                            <a href="#experiences" className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineBriefcase />
-                                <span className="ms-3">Experiência</span>
+                                <span className="ms-3">Experiências</span>
                             </a>
                         </li>
                     </ul>
