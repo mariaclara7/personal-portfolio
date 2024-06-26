@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Home() {
     return (
         <section id="home" className="h-[95vh] flex flex-col items-center justify-center mb-10">
-            <h1 className="font-bold text-[35px] text-pink-500 mb-2">Maria Clara</h1>
+            <h1 className="font-bold text-[35px] text-pink-500 mb-2 dark:text-blue-500">Maria Clara</h1>
             <ReactTyped
                 strings={[
                     "Desenvolvedora front-end",
