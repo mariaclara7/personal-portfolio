@@ -33,7 +33,7 @@ export default function Experiences() {
                         <div className="pb-5">
                             <span className="text-sm text-slate-700 dark:text-slate-100">Março 2021 - Dezembro 2021</span>
                             <h3 className="font-bold text-[25px] text-slate-700 dark:text-slate-100">Yankton Technologies</h3>
-                            <h4 className="font-semibold text-[18px] text-slate-700 dark:text-slate-100 mb-2">Desenvolvedora Júnior</h4>
+                            <h4 className="font-semibold text-[18px] text-slate-700 dark:text-slate-100 mb-2">Estagiária</h4>
                             <ul className="text-slate-700 dark:text-slate-100">
                                 <li className="mb-1">- Desenvolvimento web a partir de protótipos (Figma).</li>
                                 <li className="mb-1">- Desenvolvimento de aplicações web linguagens C# e React.ts.</li>
