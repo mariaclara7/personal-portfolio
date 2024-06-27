@@ -19,7 +19,7 @@ export default function App() {
   return (
     <>
       <Sidebar setDarkMode={setDarkMode} darkMode={darkMode} />
-      <div className="p-4 sm:ml-64">
+      <div className="p-4 sm:ml-64 bg-[#f8fafc] dark:bg-slate-900">
         <Home />
         <About />
         <Experiences />
