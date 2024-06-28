@@ -1,10 +1,13 @@
+import { Fade } from "react-awesome-reveal";
 import { ReactTyped } from "react-typed";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     return (
         <section id="home" className="h-[95vh] flex flex-col items-center justify-center mb-10">
-            <h1 className="font-bold text-[35px] text-purple-800 mb-2 dark:text-slate-100">Maria Clara</h1>
+            <Fade direction="down" duration={2000}>
+                <h1 className="font-bold text-[35px] text-purple-800 mb-2 dark:text-slate-100">Maria Clara</h1>
+            </Fade>
             <ReactTyped
                 strings={[
                     "Desenvolvedora front-end",
