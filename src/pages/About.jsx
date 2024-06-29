@@ -5,8 +5,8 @@ export default function About() {
     return (
         <section id="about" className="lg:px-10 px-2 py-10">
             <h2 className="font-bold text-[35px] text-purple-800 dark:text-purple-500 mb-10">Sobre mim</h2>
-            <Fade duration={2000} triggerOnce>
-                <div className='flex sm:flex-row flex-col justify-between items-center gap-10'>
+            <div className='flex sm:flex-row flex-col justify-between items-center gap-10'>
+                <Fade duration={2000} triggerOnce className="z-0">
                     <img src={avatar} className='w-[180px] h-[180px]' />
                     <div className='bg-white dark:bg-slate-900 dark:border dark:border-2 dark:border-purple-500 dark:border-dashed shadow-lg lg:px-10 px-5 py-5 rounded-lg w-full lg:flex-row flex-col flex gap-10'>
                         <p className='text-slate-700 dark:text-white lg:w-[50%] w-[100%]'>
@@ -35,8 +35,8 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </Fade>
+                </Fade>
+            </div>
         </section>
     )
 }
