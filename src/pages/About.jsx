@@ -7,8 +7,8 @@ export default function About() {
             <h2 className="font-bold text-[35px] text-purple-800 dark:text-purple-500 mb-10">Sobre mim</h2>
             <div className='flex sm:flex-row flex-col justify-between items-center gap-10'>
                 <Fade duration={2000} triggerOnce className="z-0">
-                    <img src={avatar} className='w-[180px] h-[180px]' />
-                    <div className='bg-white dark:bg-slate-900 dark:border dark:border-2 dark:border-purple-500 dark:border-dashed shadow-lg lg:px-10 px-5 py-5 rounded-lg w-full lg:flex-row flex-col flex gap-10'>
+                    <img src={avatar} className='w-full' />
+                    <div className='bg-white dark:bg-slate-900 dark:border-2 dark:border-purple-500 dark:border-dashed shadow-lg lg:px-10 px-5 py-5 rounded-lg w-full lg:flex-row flex-col flex gap-10'>
                         <p className='text-slate-700 dark:text-white lg:w-[50%] w-[100%]'>
                             Me chamo Maria Clara e sou atuante na área de TI, com foco em desenvolvimento web.
                             <br />
