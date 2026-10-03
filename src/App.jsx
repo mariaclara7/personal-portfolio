@@ -1,41 +1,23 @@
-import { useState, useEffect } from "react";
-import Sidebar from "./components/Sidebar";
-import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Experiences from "./pages/Experiences";
-import 'flowbite';
-import Preloader from "./components/Preloader";
+import Contact from "./pages/Contact";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false)
-  const [screenLoading, setScreenLoading] = useState(false);
-  const [screenLoaded, setScreenLoaded] = useState(false);
-
-  useEffect(() => {
-    setScreenLoading(true);
-    setTimeout(() => {
-      setScreenLoading(false);
-      setScreenLoaded(true)
-    }, 1500);
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode])
-
   return (
-    <>
-      {screenLoading && <Preloader />}
-      <Sidebar setDarkMode={setDarkMode} darkMode={darkMode} />
-      <div className="p-4 sm:ml-64 bg-[#f8fafc] dark:bg-slate-900">
-        <Home />
+    <div id="top" className="max-w-[1280px] mx-auto bg-paper text-ink overflow-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <Projects />
         <About />
         <Experiences />
-      </div>
-    </>
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }
