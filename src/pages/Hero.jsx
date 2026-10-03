@@ -1,5 +1,6 @@
 import { PiArrowDownBold, PiDownloadSimpleBold } from "react-icons/pi";
-import avatar from "../assets/images/avatar.png";
+import avatar from "../assets/images/avatar.webp";
+import { useLanguage } from "../i18n/LanguageContext";
 
 // A ordem define o ritmo da flutuação (cada chip sobe um pouco mais e mais devagar)
 const chips = [
@@ -11,6 +12,8 @@ const chips = [
 ];
 
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section className="grid grid-cols-[repeat(auto-fit,minmax(min(400px,100%),1fr))] items-center gap-10 px-6 sm:px-14 pt-10 sm:pt-14 pb-24">
             <div className="flex flex-col gap-[22px]">
@@ -18,28 +21,28 @@ export default function Hero() {
                     Maria<br />Clara<span className="text-pink">.</span>
                 </h1>
                 <p className="max-w-[520px] text-xl sm:text-2xl leading-[1.4] [text-wrap:pretty]">
-                    Desenvolvedora{" "}
+                    {t.hero.before}
                     <span className="relative inline-block">
-                        front-end
+                        {t.hero.highlight}
                         <svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true" className="absolute left-0 -bottom-2 w-full h-3 overflow-visible">
                             <path className="draw" d="M2 7 Q 12 1 22 7 T 42 7 T 62 7 T 82 7 T 102 7 T 118 7" fill="none" stroke="oklch(0.72 0.15 350)" strokeWidth="3" strokeLinecap="round" pathLength="1" />
                         </svg>
                     </span>
-                    . Engenheira da Computação e pós-graduada em IA pela UTFPR.
+                    {t.hero.after}
                 </p>
                 <div className="flex flex-wrap gap-3 mt-2">
                     <a href={`${import.meta.env.BASE_URL}curriculum.pdf`} target="_blank" rel="noopener noreferrer" className="btn-pop bg-pink">
-                        <PiDownloadSimpleBold />Baixar currículo
+                        <PiDownloadSimpleBold />{t.hero.resume}
                     </a>
                     <a href="#projetos" className="btn-pop bg-card">
-                        Ver projetos<PiArrowDownBold />
+                        {t.hero.projects}<PiArrowDownBold />
                     </a>
                 </div>
             </div>
 
             <div className="relative justify-self-center w-full max-w-[480px] h-[380px] sm:h-[460px]">
                 <div className="absolute left-[50px] right-[50px] top-[70px] bottom-[30px] bg-blob border-2 border-ink shadow-pop-xl" style={{ borderRadius: "44% 56% 52% 48% / 50% 44% 56% 50%" }} />
-                <img src={avatar} alt="Ilustração da Maria Clara" className="absolute left-1/2 bottom-[22px] -translate-x-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-contain pointer-events-none" />
+                <img src={avatar} alt={t.hero.avatarAlt} className="absolute left-1/2 bottom-[22px] -translate-x-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-contain object-bottom pointer-events-none" />
                 {chips.map(({ label, position, className }, i) => (
                     <span
                         key={label}

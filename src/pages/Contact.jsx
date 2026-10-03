@@ -1,19 +1,22 @@
 import { PiArrowUpRightBold, PiEnvelopeSimpleBold, PiGithubLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
-
-const contacts = [
-    { label: "E-mail", handle: "mcadelmonico@gmail.com", href: "mailto:mcadelmonico@gmail.com", icon: PiEnvelopeSimpleBold, hover: "hover:bg-tint-pink" },
-    { label: "GitHub", handle: "@mariaclara7", href: "https://github.com/mariaclara7", icon: PiGithubLogoBold, hover: "hover:bg-tint-lilac" },
-    { label: "LinkedIn", handle: "/in/mariaclara733", href: "https://www.linkedin.com/in/mariaclara733/", icon: PiLinkedinLogoBold, hover: "hover:bg-tint-rose" },
-];
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Contact() {
+    const { t } = useLanguage();
+
+    const contacts = [
+        { label: t.contact.email, handle: "mcadelmonico@gmail.com", href: "mailto:mcadelmonico@gmail.com", icon: PiEnvelopeSimpleBold, hover: "hover:bg-tint-pink" },
+        { label: "GitHub", handle: "@mariaclara7", href: "https://github.com/mariaclara7", icon: PiGithubLogoBold, hover: "hover:bg-tint-lilac" },
+        { label: "LinkedIn", handle: "/in/mariaclara733", href: "https://www.linkedin.com/in/mariaclara733/", icon: PiLinkedinLogoBold, hover: "hover:bg-tint-rose" },
+    ];
+
     return (
         <section id="contato" className="flex flex-col gap-6 px-6 sm:px-14 pb-[72px]">
-            <h2 className="section-title">Contato</h2>
+            <h2 className="section-title">{t.contact.title}</h2>
             <div className="flex flex-col border-t-2 border-ink">
                 {contacts.map(({ label, handle, href, icon: Icon, hover }) => (
                     <a
-                        key={label}
+                        key={href}
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
